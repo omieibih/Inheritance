@@ -17,6 +17,53 @@ public class Student {
         lastName = lName; 
         GPA = gpa;
         idNumber = ID; 
+    }
+
+    public String getFirstName()
+    {
+        return firstName;
+    }
+
+    public void setFirstName(String name)
+    {
+        firstName = name;
+    }
+
+    public String getLastName()
+    {
+        return lastName;
+    }
+
+    public void setLastName(String name)
+    {
+        lastName = name;
+    }
+
+    public Float getGPA()
+    {
+        return GPA;
+    }
+
+    public void setGPA(Float gpa)
+    {
+        GPA = gpa;
+    }
+
+    public String getID()
+    {
+        return idNumber;
+    }
+
+    public void setID(String id)
+    {
+        idNumber = id;
+    }
+
+
+
+    public String toString()
+    {
+        return "Student Name- " + getFirstName() + getLastName() + "\nGPA- " + getGPA() + "\nID Number " + getID();
 
     }
     
