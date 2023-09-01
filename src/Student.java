@@ -1,17 +1,17 @@
 public class Student {
-    private String firstName, lastName;
-    private Float GPA;
-    private String idNumber;
+    public String firstName, lastName;
+    public Float GPA;
+    public int idNumber;
 
     public Student()
     {
         firstName = "John";
         lastName = "Doe";
         GPA = 4.0f;
-        idNumber = "12345";
+        idNumber = 12345;
     }
 
-    public Student(String fName, String lName, Float gpa, String ID)
+    public Student(String fName, String lName, Float gpa, int ID)
     {
         firstName = fName;
         lastName = lName; 
@@ -51,10 +51,10 @@ public class Student {
 
     public String getID()
     {
-        return idNumber;
+        return "ID Number is " + idNumber;
     }
 
-    public void setID(String id)
+    public void setID(int id)
     {
         idNumber = id;
     }
@@ -63,7 +63,7 @@ public class Student {
 
     public String toString()
     {
-        return "Student Name- " + getFirstName() + getLastName() + "\nGPA- " + getGPA() + "\nID Number " + getID();
+        return "Student Name- " + getFirstName() + " " + getLastName() + "\nGPA- " + getGPA() + "\n" + getID() + "\n";
 
     }
     
