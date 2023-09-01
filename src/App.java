@@ -15,7 +15,10 @@ public class App {
         students.add(dan);
         students.add(jane);
 
-        System.out.println(students);
+        for (Student s: students)
+        {
+            System.out.println(s);
+        }
 
     }
 }
