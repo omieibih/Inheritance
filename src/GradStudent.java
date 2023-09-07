@@ -22,6 +22,11 @@ public class GradStudent extends Student {
         officeHours = hours; 
     }
 
+    public String getDegree()
+    {
+        return "Graduate Degree";
+    }
+
     public String getOfficeHours()
     {
         return "Office hours are between " + officeHours;
@@ -39,7 +44,7 @@ public class GradStudent extends Student {
 
     @Override public String toString()
     {
-        return "Student Name- " + getFirstName() + " " + getLastName() + "\nGPA- " + getGPA() + "\n" + getID() +"\n" + getOfficeHours() + "\n";
+        return "Student Name- " + getFirstName() + " " + getLastName() + "\nGPA- " + getGPA() + "\n" + getID() +"\n" + getOfficeHours();
     }
     
 }

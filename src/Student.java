@@ -1,4 +1,4 @@
-public class Student {
+public abstract class Student implements Serializable{
     public String firstName, lastName;
     public Float GPA;
     public int idNumber;
@@ -9,6 +9,11 @@ public class Student {
         lastName = "Doe";
         GPA = 4.0f;
         idNumber = 12345;
+    }
+
+    public String getSerialData()
+    {
+        return firstName + "," + lastName + "," + idNumber + "," + GPA + "\n";
     }
 
     public Student(String fName, String lName, Float gpa, int ID)
@@ -59,11 +64,12 @@ public class Student {
         idNumber = id;
     }
 
+    public abstract String getDegree();
 
 
     public String toString()
     {
-        return "Student Name- " + getFirstName() + " " + getLastName() + "\nGPA- " + getGPA() + "\n" + getID() + "\n";
+        return "Student Name- " + getFirstName() + " " + getLastName() + "\nGPA- " + getGPA() + "\n" + getID();
 
     }
     
